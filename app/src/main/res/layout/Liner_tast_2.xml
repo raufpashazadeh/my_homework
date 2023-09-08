@@ -102,11 +102,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="17dp"
             android:text="Forget password ?"
             android:textColor="@color/red_color_forgot"
-            android:textSize="9sp"
-            android:layout_marginTop="17dp"
-            android:layout_gravity="end"/>
+            android:textSize="9sp" />
 
     </LinearLayout>
 
@@ -128,7 +128,7 @@
             android:textSize="21sp"
             app:backgroundTint="@color/red_color_forgot"
             app:cornerRadius="10dp"
-            app:icon=""
+            app:icon="@drawable/baseline_keyboard_arrow_right_24"
             app:iconGravity="textEnd"
             app:iconPadding="11dp"
             app:iconSize="15dp"
