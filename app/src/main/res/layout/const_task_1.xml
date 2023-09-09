@@ -16,9 +16,7 @@
     app:layout_constraintStart_toStartOf="parent"
     android:src="@drawable/ic_group_31"
     android:layout_marginLeft="52dp"
-    android:layout_marginTop="50dp"
-
-    />
+    android:layout_marginTop="50dp" />
 
 
     <TextView
@@ -146,25 +144,28 @@
     android:layout_marginStart="250dp"
     android:layout_marginEnd="33dp"
     android:textColor="#7D0D0D"/>
+
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttom"
         android:layout_width="300dp"
         android:layout_height="50dp"
-        tools:ignore="MissingConstraints"
-        android:id="@+id/buttom"
-        android:text="Next"
-        android:backgroundTint="#C81313"
-        android:textColor="@color/white"
-        android:textSize="9sp"
-        app:icon="@drawable/baseline_keyboard_arrow_right_24"
-        app:iconPadding="22dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textInputLayout2"
-        android:layout_marginTop="155dp"
-        android:layout_marginRight="30dp"
         android:layout_marginLeft="30dp"
+        android:layout_marginTop="152dp"
+        android:layout_marginRight="30dp"
+        android:backgroundTint="#FF3951"
+        app:cornerRadius="10dp"
+        android:text="Next"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:icon="@drawable/baseline_keyboard_arrow_right_24"
         app:iconGravity="textEnd"
-        app:iconTint="@color/white" />
+        app:iconPadding="2dp"
+        app:iconTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textInputLayout2"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/member"
@@ -189,12 +190,6 @@
         app:layout_constraintStart_toEndOf="@+id/member"
         android:textColor="#940909"
         android:layout_marginStart="130dp"/>
-
-
-
-
-
-
 
 
 
