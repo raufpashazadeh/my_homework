@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F2F2F2">
+    <TextView
+        android:id="@+id/sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP WITH EMAIL"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="130dp"
+        android:textStyle="bold"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/fullname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FULL NAME"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sign"
+        android:paddingTop="60dp"
+        android:layout_marginStart="46dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/fullnamebutton"
+        android:layout_width="310dp"
+        android:layout_height="51dp"
+        app:cornerRadius="6dp"
+        android:backgroundTint="#D9D9D9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fullname"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"/>
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" EMAIL ADDRESS"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fullnamebutton"
+        android:paddingTop="44dp"
+        android:layout_marginStart="46dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/emailbutton"
+        android:layout_width="310dp"
+        android:layout_height="51dp"
+        app:cornerRadius="6dp"
+        android:backgroundTint="#D9D9D9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"/>
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONFIRM PASSWORD"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailbutton"
+        android:paddingTop="44dp"
+        android:layout_marginStart="46dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/passwordbutton"
+        android:layout_width="310dp"
+        android:layout_height="51dp"
+        app:cornerRadius="6dp"
+        android:backgroundTint="#D9D9D9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"/>
+<com.google.android.material.button.MaterialButton
+    android:id="@+id/signbutton"
+    android:layout_width="231dp"
+    android:layout_height="53dp"
+    android:text="SIGN UP"
+    android:textStyle="normal"
+    android:textSize="16sp"
+    app:cornerRadius="13dp"
+    android:backgroundTint="#228812"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/passwordbutton"
+    android:layout_marginTop="31dp"/>
+    <TextView
+
+        android:id="@+id/textone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="By continuing, you agree to"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signbutton"
+        android:layout_marginTop="23dp" />
+
+    <TextView
+        android:id="@+id/texttwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="accept our Privacy Policy & Terms of Services "
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textone" />
+ 
+       
+
+</androidx.constraintlayout.widget.ConstraintLayout>

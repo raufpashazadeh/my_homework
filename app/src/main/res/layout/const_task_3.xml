@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="187dp"
+        android:layout_height="183dp"
+        android:src="@mipmap/ic_dev1"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="102dp"
+        android:layout_marginEnd="102dp"
+        />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unleash your creativity and let "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image"
+        android:layout_marginTop="43dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginStart="41dp"
+        android:layout_marginEnd="39dp"/>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="your artistic vision soar."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text1"
+        android:layout_marginTop="0dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginStart="41dp"
+        android:layout_marginEnd="39dp"/>
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unleash the Magic of Creation!"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text2"
+        android:layout_marginTop="112dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/fb"
+        android:layout_width="268dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#3A5998"
+        android:text="SIGN UP WITH FACEBOOK"
+        android:textSize="15sp"
+        android:drawableLeft="@drawable/facebook22"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text3"
+        tools:ignore="MissingConstraints" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mail"
+        android:layout_width="268dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="32dp"
+       android:backgroundTint="#228812"
+        android:text="SIGN UP WITH EMAIL"
+        android:drawableLeft="@drawable/email1"
+        android:textSize="16sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fb"
+        tools:ignore="MissingConstraints" />
+
+
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:id="@+id/accaund"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account?"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mail"
+        app:layout_constraintEnd_toStartOf="@+id/login"
+      android:layout_marginStart="93dp"/>
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log in"
+        android:textColor="#00B5EE"
+        app:layout_constraintStart_toStartOf="@+id/accaund"
+        app:layout_constraintTop_toBottomOf="@+id/mail"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="30dp" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
