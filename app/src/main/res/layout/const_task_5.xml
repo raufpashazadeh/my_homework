@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+  <View
+      android:id="@+id/view"
+      android:layout_width="match_parent"
+      android:layout_height="110dp"
+      android:background="#AC1212" 
+      android:orientation="vertical"
+      tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="393dp"
+        android:layout_height="56dp"
+        android:text="Register"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/view"
+        android:gravity="center"/>
+    <ImageView
+        android:id="@+id/level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:src="@drawable/levels"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <ImageView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:src="@drawable/time"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+
+  <TextView
+    android:id="@+id/wellcome"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="WELCOME ABOARD!"
+      android:textSize="16sp"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/register"
+      android:layout_marginTop="24dp"
+      android:layout_marginStart="24dp"/>
+  <TextView
+      android:id="@+id/tpart1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Please enter your valid Name & email address"
+      android:textSize="16sp"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/wellcome"
+      android:layout_marginTop="12dp"
+      android:layout_marginStart="24dp" />
+  <TextView
+      android:id="@+id/tpart2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="to using all of our feature "
+      android:textSize="16sp"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tpart1"
+      android:layout_marginStart="24dp" />
+
+  <TextView
+      android:id="@+id/fullname"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Full Name"
+      android:textSize="14sp"
+      app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/tpart2"
+     android:layout_marginTop="48dp"
+     android:layout_marginStart="24dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fullnameview"
+        android:layout_width="345dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fullname"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+  <TextView
+      android:id="@+id/emailadress"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="E-Mail Address"
+      android:textSize="14sp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/fullnameview"
+      android:layout_marginTop="24dp"
+      android:layout_marginStart="24dp"/>
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/emailadressview"
+      android:layout_width="345dp"
+      android:layout_height="50dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/emailadress"
+      app:layout_constraintEnd_toEndOf="parent"
+      android:layout_marginTop="8dp"/>
+  <TextView
+      android:id="@+id/refferalcode"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Referral Code"
+      android:textSize="14sp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/emailadressview"
+      android:layout_marginTop="24dp"
+      android:layout_marginStart="24dp"/>
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/refferalcodeview"
+      android:layout_width="345dp"
+      android:layout_height="50dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/refferalcode"
+      app:layout_constraintEnd_toEndOf="parent"
+      android:layout_marginTop="8dp"/>
+
+<com.google.android.material.button.MaterialButton
+  android:id="@+id/nextbutton"
+    android:layout_width="345dp"
+    android:layout_height="48dp"
+  app:layout_constraintStart_toStartOf="parent"
+  app:layout_constraintEnd_toEndOf="parent"
+  app:layout_constraintTop_toBottomOf="@id/refferalcodeview"
+  android:layout_marginTop="120dp"
+  app:cornerRadius="10dp"
+  android:backgroundTint="#F54D4D"
+  android:text="Next"/>
+
+  <ImageView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+    android:src="@drawable/home_indicator"
+      tools:ignore="MissingConstraints"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/nextbutton"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
