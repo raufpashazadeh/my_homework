@@ -90,7 +90,7 @@
     app:endIconDrawable="@drawable/mail"
     app:endIconMode="custom"
     android:layout_marginTop="25dp"
-    android:boxbackgroundColar="#69676B">
+    android:boxbackgroundColar="#69676B"/>
 
     <com.google.android.material.textfield.TextInputEditText
         android:layout_width="match_parent"
@@ -100,7 +100,7 @@
         android:paddingVertical="16dp"
         android:paddingHorizontal="20dp"
         android:textColorHint="@drawable/mail" />
-</com.google.android.material.textfield.TextInputEditText>
+
 
     <TextView
         android:layout_width="wrap_content"
