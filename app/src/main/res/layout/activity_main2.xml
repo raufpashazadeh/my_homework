@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:backgroundTint="#F9F9F9">
+
+    <ImageView
+        android:id="@+id/blackwall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/rectangle_1708"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        />
+
+    <ImageView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:src="@drawable/ic_time"
+        android:contentDescription="@string/todo"
+        android:paddingStart="21dp"
+        app:tint="@color/white"
+        android:paddingTop="12dp" />
+    <ImageView
+        android:id="@+id/battery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_battery"
+        app:tint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <ImageView
+        android:id="@+id/connection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:tint="@color/white"
+        android:src="@drawable/ic_connection"
+        app:layout_constraintEnd_toStartOf="@+id/battery"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="5dp"/>
+    <ImageView
+        android:id="@+id/wifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_wifi"
+        app:tint="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/connection"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="5dp" />
+
+<TextView
+    android:id="@+id/Location"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Location"
+    android:textColor="#B7B7B7"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginStart="30dp"
+    android:layout_marginTop="63dp"
+    android:textSize="12sp"/>
+    <TextView
+        android:id="@+id/Bilzen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bilzen, Tanjungbalai"
+        android:textColor="#DDDDDD"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="82dp"
+        android:textSize="14sp"/>
+<com.google.android.material.button.MaterialButton
+    android:id="@+id/seachbutton"
+    android:layout_width="315dp"
+    android:layout_height="52dp"
+    android:paddingTop="15dp"
+    android:text="Search coffee"
+    android:textAlignment="textStart"
+    android:backgroundTint="#313131"
+    app:cornerRadius="10dp"
+    android:gravity="start"
+    app:layout_constraintTop_toBottomOf="@+id/Bilzen"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="28dp"
+    app:icon="@drawable/search"
+    app:iconGravity="textStart"/>
+
+    <ImageView
+        android:id="@+id/buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:src="@drawable/frame_17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/seachbutton"
+        android:layout_marginTop="24dp"
+        />
+
+<androidx.cardview.widget.CardView
+    android:id="@+id/cardviewCappucinoChocolate"
+    android:layout_width="149dp"
+    android:layout_height="239dp"
+    tools:ignore="MissingConstraints"
+    app:cardCornerRadius="10dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/buy"
+    android:layout_marginStart="30dp"
+    android:layout_marginTop="70dp" >
+    <ImageView
+        android:id="@+id/cappucino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rectangle_1706"
+        android:layout_marginStart="4dp" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/frame_7"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cappucino"
+        android:textColor="#2F2D2C"
+        android:textSize="16sp"
+        android:layout_gravity="start"
+        android:layout_marginTop="148dp"
+        android:layout_marginStart="12dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="with Chocolate"
+        android:textColor="#9B9B9B"
+        android:textSize="12sp"
+        android:layout_gravity="start"
+        android:layout_marginTop="172dp"
+        android:layout_marginStart="12dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="with Chocolate"
+        android:textColor="#9B9B9B"
+        android:textSize="12sp"
+        android:layout_gravity="start"
+        android:layout_marginTop="172dp"
+        android:layout_marginStart="12dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$ 4.53"
+        android:textColor="#2F4B4E"
+        android:textSize="18sp"
+        android:layout_gravity="start"
+        android:layout_marginTop="199dp"
+        android:layout_marginStart="12dp"
+       android:textStyle="bold" />
+</androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardviewCappucinoMilk"
+        android:layout_width="149dp"
+        android:layout_height="239dp"
+        tools:ignore="MissingConstraints"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buy"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="70dp" >
+        <ImageView
+            android:id="@+id/cappucinomilk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rectangle_17071"
+            android:layout_marginStart="4dp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/frame_7_2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cappucino"
+            android:textColor="#2F2D2C"
+            android:textSize="16sp"
+            android:layout_gravity="start"
+            android:layout_marginTop="148dp"
+            android:layout_marginStart="12dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="with Oat Milk"
+            android:textColor="#9B9B9B"
+            android:textSize="12sp"
+            android:layout_gravity="start"
+            android:layout_marginTop="172dp"
+            android:layout_marginStart="12dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$ 3.90"
+            android:textColor="#2F4B4E"
+            android:textSize="18sp"
+            android:layout_gravity="start"
+            android:layout_marginTop="199dp"
+            android:layout_marginStart="12dp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardviewAmericano"
+        android:layout_width="149dp"
+        android:layout_height="239dp"
+        tools:ignore="MissingConstraints"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardviewCappucinoChocolate"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp" >
+        <ImageView
+            android:id="@+id/Americano"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rectangle_1706"
+            android:layout_marginStart="4dp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/frame_7_3"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Americano"
+            android:textColor="#2F2D2C"
+            android:textSize="16sp"
+            android:layout_gravity="start"
+            android:layout_marginTop="148dp"
+            android:layout_marginStart="12dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="with sugar"
+            android:textColor="#9B9B9B"
+            android:textSize="12sp"
+            android:layout_gravity="start"
+            android:layout_marginTop="172dp"
+            android:layout_marginStart="12dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$ 4.95"
+            android:textColor="#2F4B4E"
+            android:textSize="18sp"
+            android:layout_gravity="start"
+            android:layout_marginTop="199dp"
+            android:layout_marginStart="12dp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardviewEsperreso"
+        android:layout_width="149dp"
+        android:layout_height="239dp"
+        tools:ignore="MissingConstraints"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/cardviewCappucinoMilk"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="20dp" >
+        <ImageView
+            android:id="@+id/Esperesso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rectangle_1706"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/frame_7_4"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Americano"
+            android:textColor="#2F2D2C"
+            android:textSize="16sp"
+            android:layout_gravity="start"
+            android:layout_marginTop="148dp"
+            android:layout_marginStart="12dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="with doableSugar"
+            android:textColor="#9B9B9B"
+            android:textSize="12sp"
+            android:layout_gravity="start"
+            android:layout_marginTop="172dp"
+            android:layout_marginStart="12dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$ 5.10"
+            android:textColor="#2F4B4E"
+            android:textSize="18sp"
+            android:layout_gravity="start"
+            android:layout_marginTop="199dp"
+            android:layout_marginStart="12dp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
