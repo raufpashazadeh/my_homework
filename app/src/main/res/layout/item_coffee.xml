@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="149dp"
+        android:layout_height="239dp"
+        cardCornerRadius="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="70dp" >
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rectangle_1706"
+            android:layout_marginStart="4dp" />
+        <ImageView
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/frame_7"/>
+        <TextView
+            android:id="@+id/coffeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cappucino"
+            android:textColor="#2F2D2C"
+            android:textSize="16sp"
+            android:layout_gravity="start"
+            android:layout_marginTop="148dp"
+            android:layout_marginStart="12dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/coffewith"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="with Chocolate"
+            android:textColor="#9B9B9B"
+            android:textSize="12sp"
+            android:layout_gravity="start"
+            android:layout_marginTop="172dp"
+            android:layout_marginStart="12dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$ 4.53"
+            android:textColor="#2F4B4E"
+            android:textSize="18sp"
+            android:layout_gravity="start"
+            android:layout_marginTop="199dp"
+            android:layout_marginStart="12dp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+</GridLayout>

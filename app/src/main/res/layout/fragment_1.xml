@@ -1,0 +1,91 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.azeriqazib.Fragment1">
+
+
+    <ImageView
+        android:id="@+id/foto"
+        android:layout_width="wrap_content"
+        android:layout_height="290dp"
+        android:src="@drawable/ic_azeriqaz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <Button
+        android:id="@+id/borcbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Borcunu öyrən"
+        tools:layout_editor_absoluteX="173dp"
+        tools:layout_editor_absoluteY="365dp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@+id/foto"
+        android:backgroundTint="#315EB9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+
+    <ImageView
+        android:id="@+id/infobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_info"
+        app:layout_constraintStart_toStartOf="@+id/borcbutton"
+        app:layout_constraintEnd_toEndOf="@+id/borcbutton"
+        app:layout_constraintTop_toTopOf="@+id/borcbutton"
+        app:layout_constraintBottom_toBottomOf="@+id/borcbutton"
+        android:layout_marginEnd="130dp"
+        tools:ignore="MissingConstraints"
+        />
+
+
+
+    <Button
+        android:id="@+id/qaynarXettbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Qaynar xətt"
+        tools:layout_editor_absoluteX="173dp"
+        tools:layout_editor_absoluteY="365dp"
+        tools:ignore="MissingConstraints"
+        android:backgroundTint="#315EB9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/borcbutton"/>
+
+    <ImageView
+
+        android:id="@+id/callbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_phone_24"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintStart_toStartOf="@+id/qaynarXettbutton"
+        app:layout_constraintEnd_toEndOf="@+id/qaynarXettbutton"
+        app:layout_constraintTop_toTopOf="@+id/qaynarXettbutton"
+        app:layout_constraintBottom_toBottomOf="@+id/qaynarXettbutton"
+        android:layout_marginEnd="130dp" />
+
+    <Button
+        android:id="@+id/xidmetler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xidmətlərə keçin"
+        android:textSize="25sp"
+        android:textColor="#EFEDEC"
+        android:backgroundTint="#315EB9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qaynarXettbutton"
+        android:layout_marginTop="40dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

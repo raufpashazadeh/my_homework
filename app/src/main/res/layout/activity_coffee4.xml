@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.Coffenew.CoffeeActivity4">
+
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/arrow_left_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Order"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/TextDeliver"
+        android:layout_width="154dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="29dp"
+        android:backgroundTint="#C67C4E"
+        android:text="Deliver"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/TextPickup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/order"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/TextPickup"
+        android:layout_width="154dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="34dp"
+        android:backgroundTint="#F2F2F2"
+        android:text="Pick Up"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/TextDeliver"
+        app:layout_constraintTop_toBottomOf="@+id/order"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textAdress"
+        android:layout_width="140dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="30dp"
+        android:text="Delivery Address"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextDeliver" />
+    <TextView
+        android:id="@+id/textSutoyo"
+        android:layout_width="104dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="16dp"
+        android:text="Jl. Kpg Sutoyo"
+        android:textSize="16dp"
+        android:layout_marginStart="30dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textAdress" />
+
+
+    <TextView
+        android:id="@+id/text620"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Kpg. Sutoyo No. 620, Bilzen, Tanjungbalai."
+        android:textSize="16dp"
+        android:layout_marginStart="30dp"
+        android:textColor="#808080"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textSutoyo" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/EditAdressbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:backgroundTint="#DEDEDE"
+        android:text="Edit Address"
+        android:textColor="#303336"
+        android:textSize="12dp"
+        app:cornerRadius="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="305dp" />
+
+    <ImageView
+        android:id="@+id/editimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_edit"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="322dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/AddNotebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:backgroundTint="#DEDEDE"
+        android:text="Add Note"
+        android:textColor="#303336"
+        android:textSize="12dp"
+        app:cornerRadius="16dp"
+        app:layout_constraintStart_toEndOf="@+id/EditAdressbutton"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="304dp" />
+
+    <ImageView
+        android:id="@+id/addimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        app:layout_constraintStart_toEndOf="@+id/EditAdressbutton"
+        app:srcCompat="@drawable/ic_edit"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="322dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,44 +1,85 @@
-<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+<<<<<<< Original<?xml version="1.0" encoding="utf-8"?><manifest xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools">
 
-    <application
-        android:allowBackup="true"
-        android:dataExtractionRules="@xml/data_extraction_rules"
-        android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/Theme.Last_Application"
-        tools:targetApi="31">
-        <activity
-            android:name="com.example.TestActivity"
-            android:exported="false" />
-        <activity
-            android:name=".TestActivity2"
-            android:exported="false" />
-        <activity
-            android:name=".TestActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity4"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity3"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity2"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+<application
+    android:allowBackup="true"
+    android:dataExtractionRules="@xml/data_extraction_rules"
+    android:fullBackupContent="@xml/backup_rules"
+    android:icon="@mipmap/ic_launcher"
+    android:label="@string/app_name"
+    android:roundIcon="@mipmap/ic_launcher_round"
+    android:supportsRtl="true"
+    android:theme="@style/Theme.Last_Application"
+    tools:targetApi="31">
+    <activity
+        android:name="com.example.navigation.MainActivity"
+        android:exported="false">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-    </application>
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+    <activity
+        android:name="com.example.navigation.MainActivity"
+        android:exported="false" />
+    <activity
+        android:name="com.example.yeni.ListActivity"
+        android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
 
-</manifest>
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+    <activity
+        android:name="com.example.Coffenew.CoffeActivityRec"
+        android:exported="false" />
+    <activity
+        android:name="com.example.Coffenew.CoffeeActivity4"
+        android:exported="false" />
+    <activity
+        android:name="com.example.Coffenew.CoffeeActivity3"
+        android:exported="false" />
+    <activity
+        android:name="com.example.Coffenew.CoffeeActivity2"
+        android:exported="false" />
+    <activity
+        android:name="com.example.Coffenew.CoffeeActivity"
+        android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+    <activity
+        android:name=".MainActivity4"
+        android:exported="false" />
+    <activity
+        android:name=".MainActivity3"
+        android:exported="false" />
+    <activity
+        android:name=".MainActivity2"
+        android:exported="false" />
+    <activity
+        android:name=".MainActivity"
+        android:exported="true" />
+</application>
+
+</manifest>=======
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<application>
+    <activity
+        android:name="com.example.azeriqazib.Activityazqaz"
+        android:exported="true"
+
+        >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+</application>
+</manifest>>>>>>>> Added

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.Coffenew.CoffeeActivity">
+    <ImageView
+        android:id="@+id/fotocoffeunder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rectangle_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:scaleType="fitXY"/>
+    <ImageView
+        android:id="@+id/fotocoffe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/image_3"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:src="@drawable/ic_time"
+        android:contentDescription="@string/todo"
+        android:paddingStart="21dp"
+        android:paddingTop="12dp"/>
+    <ImageView
+        android:id="@+id/battery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_battery"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        tools:ignore="ContentDescription"/>
+
+    <ImageView
+        android:id="@+id/connection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_connection"
+        app:layout_constraintEnd_toStartOf="@+id/battery"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="5dp"/>
+    <ImageView
+        android:id="@+id/wifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_wifi"
+        app:layout_constraintEnd_toStartOf="@+id/connection"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="5dp" />
+
+
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coffee so good, "
+        android:textSize="34sp"
+        android:textAlignment="center"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toTopOf="@+id/fotocoffeunder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="77dp"/>
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="your taste buds "
+        android:textSize="34sp"
+        android:textAlignment="center"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@+id/text1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="#FFFFFF"/>
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="will love it."
+        android:textSize="34sp"
+        android:textAlignment="center"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text2"
+        android:textColor="#FFFFFF"/>
+
+
+    <TextView
+        android:id="@+id/textmini1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The best grain, the finest roast, the "
+        android:textColor="#A9A9A9"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text3"/>
+    <TextView
+        android:id="@+id/textmini2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="powerful flavor."
+        android:textColor="#A9A9A9"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textmini1"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonstart"
+        android:layout_width="315dp"
+        android:layout_height="62dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textmini2"
+        android:text="Get Started"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#C67C4E"
+        app:cornerRadius="10dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
